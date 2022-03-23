@@ -1,3 +1,3 @@
-[submodule "eoghandev/themes/ink"]
-	path = eoghandev/themes/ink
-	url = https://github.com/knadh/hugo-ink.git
+[submodule "eoghandev/themes/minimalist"]
+	path = eoghandev/themes/minimalist
+	url = https://github.com/ronv/minimalist
