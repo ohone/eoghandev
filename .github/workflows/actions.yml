@@ -17,7 +17,7 @@ on:
     branches:
       - "main"
 
-name: Build and Deploy to Cloud Run
+name: Build and Deploy to Cloud Storage
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
   REGION: europe-west4
