@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on eoghan firth-o&#39;donnell</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on eoghan firth-o&#39;donnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Mar 2022 12:27:54 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dapp: daosplit</title>
+      <link>/posts/daosplit/</link>
+      <pubDate>Sun, 20 Mar 2022 12:27:54 +0000</pubDate>
+      
+      <guid>/posts/daosplit/</guid>
+      <description>Simple smart contract and factory that facilitates rewarding the locking of a token.
+Example UI built with sveltekit served as static site through google cloud bucket.
+UI Exposes all features of the dapp on supported chains, including:
+  initite a split
+  lock tokens in an existing split
+  add rewards to an existing split
+  track and claim share of rewards from a split
+   dapp</description>
+    </item>
+    
+    <item>
+      <title>SvelteSwap</title>
+      <link>/posts/svelteswap/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:30 +0000</pubDate>
+      
+      <guid>/posts/svelteswap/</guid>
+      <description>uniswap v2 mirror built in sveltejs - relies on uniswap api so fails due to CORS</description>
+    </item>
+    
+    <item>
+      <title>ERC1155-&gt;ERC20 Token Wrapper</title>
+      <link>/posts/erc1155-wrapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/erc1155-wrapper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
