@@ -1,26 +1,29 @@
 html.dark body {
-  color: #ddd;
-  background-color: #000;
+  color: #d8e1e7;
+  background:
+    radial-gradient(circle at 10% -20%, #0f3533 0%, rgba(15, 53, 51, 0) 34%),
+    radial-gradient(circle at 90% 0%, #3c2d1a 0%, rgba(60, 45, 26, 0) 30%),
+    #071018;
 }
 
 html.dark ::-moz-selection {
-  background: #9375fd;
-  color: #fff;
+  background: #38b2a6;
+  color: #031012;
   text-shadow: none
 }
 
 html.dark ::selection {
-  background: #9375fd;
-  color: #fff;
+  background: #38b2a6;
+  color: #031012;
   text-shadow: none
 }
 
 html.dark hr {
-  border-color: #333;
+  border-color: #26343e;
 }
 
 html.dark blockquote {
-  border-color: #ddd;
+  border-color: #38b2a6;
 }
 
 html.dark h1,
@@ -29,59 +32,81 @@ html.dark h3,
 html.dark h4,
 html.dark h5,
 html.dark h6 {
-  color: #ddd;
+  color: #e5edf1;
 }
 
-html.dark a,a:hover {
-  color: #9375fd;
+html.dark .container {
+  background: linear-gradient(180deg, rgba(9, 18, 27, 0.9) 0%, rgba(9, 18, 27, 0.86) 100%);
+  border-color: #24333d;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+}
+
+html.dark a,
+html.dark a:hover {
+  color: #4fd3c8;
   text-decoration: none;
 }
 
 html.dark table tbody tr:nth-of-type(even) {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 html.dark .site-description a,
 html.dark .site-description a:hover {
-  color: #ddd;
-  text-decoration: underline;
-}
-
-html.dark a:hover {
-  opacity: 0.8;
+  color: #d8e1e7;
 }
 
 html.dark .post-tags .tags a {
-  border: 1px solid #ddd;
-  color: #ddd;
+  border: 1px solid #4fd3c8;
+  color: #4fd3c8;
 }
 
-html.dark .site-title a {
-  color: #ddd;
+html.dark .site-title a,
+html.dark .post .title.small a {
+  color: #e5edf1;
   text-decoration: none !important;
 }
 
 html.dark .header nav,
-html.dark .footer {
-  border-color: #333;
+html.dark .footer,
+html.dark .bio-card,
+html.dark .contact-card,
+html.dark .recent-posts .posts .post,
+html.dark .list .posts .post {
+  border-color: #263540;
 }
 
 html.dark .highlight {
-  background-color: #333;
+  background-color: #16212a;
 }
 
 html.dark .bio-card,
-html.dark .contact-card {
-  background: #111;
-  border-color: #2b2b2b;
+html.dark .contact-card,
+html.dark .recent-posts .posts .post,
+html.dark .list .posts .post {
+  background: #0f1922;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.32);
 }
 
-html.dark .contact-status {
-  color: #aaa;
+html.dark .post-header .meta .date .day {
+  background: #38b2a6;
+  color: #04201d;
+}
+
+html.dark .post-header .meta .date .rest,
+html.dark .contact-status,
+html.dark .footer,
+html.dark .footer a {
+  color: #9cb0bc;
 }
 
 html.dark .contact-btn {
-  background: #9375fd;
-  border-color: #9375fd;
-  color: #111;
+  background: #38b2a6;
+  border-color: #38b2a6;
+  color: #05201d;
+}
+
+html.dark .contact-btn:hover {
+  background: #53dfd3;
+  border-color: #53dfd3;
 }
