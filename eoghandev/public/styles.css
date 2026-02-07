@@ -1,0 +1,234 @@
+:root {
+  --bg: #f4f4ef;
+  --ink: #1f2a33;
+  --muted: #5b6770;
+  --line: #cfd7de;
+  --card: #fbfaf7;
+  --project: #102a43;
+  --project-ink: #f8fbff;
+  --link: #0b5f94;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 7% 0%, #dff3ff 0%, rgba(223, 243, 255, 0) 32%),
+    radial-gradient(circle at 93% 0%, #fdeed9 0%, rgba(253, 238, 217, 0) 28%),
+    var(--bg);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.shell {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: 2.1rem 0 2.5rem;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.9rem;
+}
+
+.brand {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: clamp(1.55rem, 2.6vw, 2.2rem);
+  letter-spacing: 0.02em;
+}
+
+.brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.nav a {
+  font-weight: 650;
+  text-decoration: none;
+  color: #1f2f3a;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  border-bottom-color: #1f2f3a;
+}
+
+.hero {
+  margin-top: 1.8rem;
+  margin-bottom: 1.7rem;
+}
+
+.hero h2 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: clamp(2rem, 4.7vw, 3.3rem);
+  line-height: 1.1;
+}
+
+.hero p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 1rem 1rem 1.1rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: 1.35rem;
+}
+
+.card p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+}
+
+.card .go {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card .go:hover {
+  text-decoration: underline;
+}
+
+.card.project {
+  background: linear-gradient(160deg, #0f3555 0%, var(--project) 45%, #183e5f 100%);
+  color: var(--project-ink);
+  border-color: #0c3a5d;
+}
+
+.card.project p,
+.card.project a {
+  color: #dcecff;
+}
+
+.consulting {
+  margin-top: 1rem;
+}
+
+.consulting h3 {
+  margin-bottom: 0.4rem;
+}
+
+.consulting .go {
+  margin-top: 0.6rem;
+}
+
+.section-title {
+  margin: 1.6rem 0 0.55rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #4f5f6a;
+  font-weight: 700;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.78rem 0.95rem;
+  background: var(--card);
+  border-top: 1px solid var(--line);
+}
+
+.list li:first-child {
+  border-top: none;
+}
+
+.list .meta {
+  color: #72818b;
+  white-space: nowrap;
+  font-size: 0.93rem;
+}
+
+.note {
+  margin-top: 1.3rem;
+  border-left: 3px solid #8094a3;
+  padding: 0.2rem 0 0.2rem 0.7rem;
+  color: #5f6d77;
+}
+
+.footer {
+  margin-top: 1.9rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+  color: #61707b;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 760px) {
+  .shell {
+    padding-top: 1.2rem;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
