@@ -1,103 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.91.2" />
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>eoghan firth-o&#39;donnell  </title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="eoghan firth-o'donnell" />
-	<meta itemprop="name" content="eoghan firth-o&#39;donnell">
-<meta itemprop="description" content=""><meta property="og:title" content="eoghan firth-o&#39;donnell" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="eoghan firth-o&#39;donnell"/>
-<meta name="twitter:description" content=""/>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-
-        <link id="dark-scheme" rel="stylesheet" type="text/css" href="/css/dark.css" />
-
-	
-		<script src="/js/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eoghan.dev</title>
+  <meta name="description" content="eoghan.dev - static home for posts and projects.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-	<div class="container wrapper">
-	<div class="header">
-	
-	<h1 class="site-title"><a href="/">eoghan firth-o&#39;donnell</a></h1>
-	<div class="site-description"><nav class="nav social">
-			<ul class="flat"></ul>
-		</nav>
-	</div>
+  <div class="shell">
+    <header class="top">
+      <h1 class="brand"><a href="/">eoghan.dev</a></h1>
+      <nav class="nav" aria-label="Primary">
+        <a href="/posts/">Posts</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+    </header>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-		</ul>
-	</nav>
-</div>
+    <main>
+      <section class="hero">
+        <h2>Posts and projects.</h2>
+        <p>Ultra-lightweight static site. No framework runtime, no JS bundle, just pages.</p>
+      </section>
 
-		<section class="bio-card section">
-			<h2>Bio</h2>
-			<p>
-				I&#39;m Eoghan Firth-O&#39;Donnell, a builder focused on practical web products and experiments in AI.
-				I&#39;m an LLM enthusiast and I like shipping useful tools quickly.
-			</p>
-		</section>
+      <section class="grid" aria-label="Primary sections">
+        <article class="card">
+          <h3>Posts</h3>
+          <p>Writing, notes, and build logs.</p>
+          <a class="go" href="/posts/">Browse posts</a>
+        </article>
 
-		<section class="contact-card section" id="contact">
-			<h2>Contact me</h2>
-			<p>
-				Want to collaborate or chat? Email me at
-				<a id="contact-email-link" href="mailto:eoghan@eoghan.dev">eoghan@eoghan.dev</a>.
-			</p>
-			<div class="contact-actions">
-				<button type="button" id="copy-email-btn" class="contact-btn" data-email="eoghan@eoghan.dev">Copy email</button>
-				<span id="copy-email-status" class="contact-status" aria-live="polite"></span>
-			</div>
-		</section>
+        <article class="card project">
+          <h3>Projects</h3>
+          <p>A dedicated home for active builds, shipped work, and experiments.</p>
+          <a class="go" href="/projects/">Open projects</a>
+        </article>
+      </section>
 
-		<div class="recent-posts section">
-			<div class="posts">
-				
-					<div class="post">
-						<div class="post-header">
-	<div class="meta">
-		<div class="date">
-			<span class="day">01</span>
-			<span class="rest">Jan 0001</span>
-		</div>
-	</div>
-	<div class="matter">
-		<h4 class="title small">
-			<a href="/posts/erc1155-wrapper/">ERC1155-&gt;ERC20 Token Wrapper</a>
-		</h4>
-		<span class="description">
-			
-				Contract facilitating fractionalising of defined-on-deployment ERC1155 tokens.
-			
-		</span>
-	</div>
-</div>
+      <section class="card consulting" aria-label="Consulting">
+        <h3>Consulting</h3>
+        <p>Available for focused product and engineering consulting on AI, web delivery, and shipping fast.</p>
+        <a class="go" href="mailto:consulting@eoghan.dev">consulting@eoghan.dev</a>
+      </section>
 
-					</div>
-				
-				
+      <h3 class="section-title">Current</h3>
+      <ul class="list" aria-label="Current focus">
+        <li>
+          <span>Site redesign and rework</span>
+          <span class="meta">In progress</span>
+        </li>
+      </ul>
 
+      <p class="note">This version is intentionally static-first for speed, simplicity, and low operational overhead.</p>
+    </main>
 
-			</div>
-		</div>
-	</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div>2022  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
-	</nav>
-</div>
-
-
+    <footer class="footer">eoghan.dev</footer>
+  </div>
 </body>
 </html>
