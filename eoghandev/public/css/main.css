@@ -318,6 +318,52 @@ ul {
     letter-spacing: 1px;
 }
 
+.bio-card,
+.contact-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    background: #fafafa;
+}
+
+.bio-card h2,
+.contact-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.bio-card p,
+.contact-card p {
+    margin: 0;
+}
+
+.contact-actions {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-btn {
+    background: #3700ff;
+    color: #fff;
+    border: 1px solid #3700ff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    opacity: 0.92;
+}
+
+.contact-status {
+    font-size: 0.85rem;
+    color: #666;
+}
+
 .recent-posts .posts .post {
     margin-bottom: 45px;
 }
@@ -453,6 +499,11 @@ ul {
 
     .container {
         margin-top: 10px;
+    }
+
+    .bio-card,
+    .contact-card {
+        padding: 14px 14px;
     }
 
     .header .nav.social li {

@@ -69,3 +69,19 @@ html.dark .footer {
 html.dark .highlight {
   background-color: #333;
 }
+
+html.dark .bio-card,
+html.dark .contact-card {
+  background: #111;
+  border-color: #2b2b2b;
+}
+
+html.dark .contact-status {
+  color: #aaa;
+}
+
+html.dark .contact-btn {
+  background: #9375fd;
+  border-color: #9375fd;
+  color: #111;
+}
