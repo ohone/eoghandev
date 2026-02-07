@@ -44,5 +44,5 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
 
-      - name: Push to cloud storage
-        run: gsutil -m cp -r eoghandev/public/* gs://eoghandev
+      - name: Sync to cloud storage
+        run: gsutil -m rsync -d -r eoghandev/public gs://eoghandev
